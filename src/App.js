@@ -5,7 +5,7 @@ import Login from './comps/Login';
 import { useStateValue } from './stateProvider/StateProvider';
 
 function App() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   return !user ? (
     <Login />
   ) : (
